@@ -1,0 +1,44 @@
+{
+  "pages": [
+      "pages/class/class",
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/cart/cart",
+    "pages/search/search",
+    "pages/mine/order/orderList",
+    "pages/goodsDetail/goodsDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#D19E29",
+    "navigationBarTitleText": "办公用品采购",
+    "navigationBarTextStyle": "write"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#F4BD40",
+    "borderStyle": "white",
+    "list": [
+     
+      {
+        "selectedIconPath": "images/class_icon_active.png",
+        "iconPath": "images/class_icon.png",
+        "pagePath": "pages/class/class",
+        "text": "分类"
+      },
+      {
+        "selectedIconPath": "images/cart_icon_active.png",
+        "iconPath": "images/cart_icon.png",
+        "pagePath": "pages/cart/cart",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "images/per_icon_active.png",
+        "iconPath": "images/per_icon.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}
+

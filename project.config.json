@@ -1,0 +1,56 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wxdf4074f56ff7bf39",
+	"projectname": "wechat_b2b2c",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "搜索页面",
+					"pathName": "pages/search/search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分类主页",
+					"pathName": "pages/class/class",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "商品详情",
+					"pathName": "pages/goodsDetail/goodsDetail",
+					"query": "id=3995"
+				}
+			]
+		}
+	}
+}

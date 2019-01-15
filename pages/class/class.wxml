@@ -1,0 +1,30 @@
+<!--pages/class/class.wxml-->
+<view class="container">
+
+  <top class="top"></top>
+
+  <view class='content'>
+
+    <scroll-view class='left' scroll-y="{{true}}" style='height:{{deviceHeight}}px'>
+      <view 
+      class="left-item {{item.id == classID ? 'active' : ''}}" 
+      wx:for="{{list}}" wx:key="index" 
+      bindtap='tabFun' id='{{item.id}}'>
+        {{item.class_name}}
+      </view>
+    </scroll-view>
+
+    <scroll-view class='right' scroll-y="{{true}}" style='height:{{deviceHeight}}px'>
+      <view class='nav' wx:for="{{listDetail}}" wx:key="index" class=''>
+        <text class='nav-class-text'>{{item.class_name}}</text>
+        <view class='nav-box'>
+          <view class='nav-item' wx:for="{{item.three}}" wx:key="index">
+            <image class='nav-image' src='{{URL+item.pic_url}}'></image>
+            <text class='nav-text'>{{item.class_name}}</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+</view>

@@ -1,0 +1,3 @@
+<!--pages/cart/cart.wxml-->
+<view wx:for="{{inputValue}}">{{item}}</view>
+<button bindtap='getValue'>点击我</button>

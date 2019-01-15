@@ -1,0 +1,14 @@
+/* components/toTop.wxss */
+.toTop{
+  position: fixed;
+  right: 50rpx;
+  bottom: 50rpx;
+  width: 80rpx;
+  height: 80rpx;
+  z-index: 99;
+}
+.toTop-image{
+  width: 80rpx;
+  height: 80rpx;
+
+}

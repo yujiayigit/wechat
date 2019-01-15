@@ -1,0 +1,28 @@
+<view class='search'>
+  <view class='top'>
+    <input type='text' 
+    auto-focus 
+    confirm-type='search' 
+    bindconfirm='searchFun'
+    bindinput='bindKeyInput'
+    class='input'
+    placeholder='搜索商品...'></input>
+    <text class='cancel' bindtap='cancelFun'>取消</text>
+  </view>
+  <view class='content'>
+    <view class='hot'>
+      <view class='search-type'>热门搜索</view>
+      <view class='search-content'>
+        <text wx:for="{{hotData}}" wx:key="index" class='search-name'>{{item.hot_words}}</text>
+      </view>
+    </view>
+    <view class='history'>
+      <view class='search-type'>历史搜索</view>
+      <view class='search-content' >
+        <text wx:for="{{historySearch}}" wx:key="index" class='search-name'>{{item}}</text>
+      </view>
+    </view>
+    <view class='btn-empty' bindtap='emptySearch'>清空历史记录</view>
+
+  </view>
+</view>
