@@ -1,4 +1,7 @@
 <!--pages/cart/cart.wxml-->
 <view wx:for="{{inputValue}}">{{item}}</view>
 <button bindtap='getValue'>点击我</button>
-阿诗丹顿多多多多多多多多多多是是是少时诵诗书所所所所所
+阿达
+阿达
+阿达
+v 
