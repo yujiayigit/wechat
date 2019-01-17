@@ -1,13 +1,8 @@
 <!--pages/cart/cart.wxml-->
 <view wx:for="{{inputValue}}">{{item}}</view>
+<view wx:for="{{test}}">{{index}}\n{{item.title}}</view>
 <button bindtap='getValue'>点击我</button>
-<view wx:for="{{inputValue}}">{{item}}</view>
-<button bindtap='getValue'>点击我</button>
-<view wx:for="{{inputValue}}">{{item}}</view>
-<button bindtap='getValue'>点击我</button>
-<view wx:for="{{inputValue}}">{{item}}</view>
-<button bindtap='getValue'>点击我</button>
-<view wx:for="{{inputValue}}">{{item}}</view>
-<button bindtap='getValue'>点击我</button>
+<button bindtap='request' type='warn'>请求</button>
+
 
 

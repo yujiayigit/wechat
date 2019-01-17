@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    inputValue:''
+    inputValue:'',
+    test:[]
   },
 
 getValue :function(){
@@ -26,6 +27,26 @@ getValue :function(){
    */
   onReady: function () {
   
+  },
+
+  request:function(){
+    var that = this;
+    var id = '85923';
+    var sign = 'c6f3cc004db440cdadbce5bdf1f45233';
+    wx.request({
+      url: 'https://route.showapi.com/341-1',
+      data:{
+        showapi_appid: id,
+        showapi_sign:sign
+      },
+      success:function(e){
+        that.setData({
+          test:e.data.showapi_res_body.contentlist
+        })
+        
+      }
+    });
+    console.log(this.data.test);
   },
 
   /**
