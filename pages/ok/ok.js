@@ -9,7 +9,7 @@ Page({
   showModal: function () {
     // 显示遮罩层
     var animation = wx.createAnimation({
-      duration:200,
+      duration:700,
       timingFunction: "ease-in-out",
       delay: 0
     })
@@ -25,7 +25,7 @@ Page({
       this.setData({
         animationData: animation.export()
       })
-    }.bind(this), 20)
+    }.bind(this), 100)
   
   },
   hideModal: function () {
