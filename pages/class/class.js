@@ -15,7 +15,7 @@ Page({
 
   /**
    * 生命周期函数--监听页面加载
-   */
+  */
   onLoad: function (options) {
     var that = this;
     wx.getSystemInfo({
@@ -36,7 +36,7 @@ Page({
         classID:res[0].id
       })
     })
-  },
+  }, 
   
   getClassFloor(index){
     wx.showLoading({

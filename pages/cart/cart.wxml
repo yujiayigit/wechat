@@ -3,6 +3,7 @@
 <view wx:for="{{test}}">{{index}}\n{{item.title}}</view>
 <button bindtap='getValue'>点击我</button>
 <button bindtap='request' type='warn'>请求</button>
+<navigator class="shop-list" url='../ok/ok'><button bindtap='getValue'>点击我</button></navigator>
 
 
 

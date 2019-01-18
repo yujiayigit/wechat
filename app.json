@@ -1,12 +1,14 @@
 {
   "pages": [
-      "pages/class/class",
+    
+    "pages/class/class",
     "pages/index/index",
     "pages/mine/mine",
     "pages/cart/cart",
     "pages/search/search",
     "pages/mine/order/orderList",
-    "pages/goodsDetail/goodsDetail"
+    "pages/goodsDetail/goodsDetail",
+"pages/ok/ok"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -19,7 +21,6 @@
     "selectedColor": "#F4BD40",
     "borderStyle": "white",
     "list": [
-     
       {
         "selectedIconPath": "images/class_icon_active.png",
         "iconPath": "images/class_icon.png",
@@ -41,4 +42,3 @@
     ]
   }
 }
-
