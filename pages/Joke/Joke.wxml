@@ -1,0 +1,5 @@
+<!--pages/Joke/Joke.wxml-->
+<view>
+<view ><text>标题：{{list.title}}</text></view>
+<view><text>内容：{{list.text}}</text></view>
+</view>

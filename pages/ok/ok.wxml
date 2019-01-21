@@ -1,5 +1,21 @@
-<view bindtap='showModal'>点击弹出</view>
-<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<view class="commodity_screen" bindtap="hideView" wx:if="{{showModalStatus}}"></view>
+<view >
 <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
-<text>我是弹出层的内容</text>
+<text>弹出层的内容</text>
+</view>
+<view class="shopCar" >
+	<view class="carParent">
+	</view>
+	<view class="carChild">
+		<view class="carImg" bindtap='showOrHide'>
+			<image  style="width:60rpx;height:60rpx;" src="/images/car.png">
+			</image>
+		</view>
+		<view class="sumPrice">
+			<text>￥{{sumPrice}}</text>		
+		</view>
+		<view class="addPay">去结算</view>
+	</view>
+			   		
+</view>
 </view>

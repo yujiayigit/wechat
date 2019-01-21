@@ -1,40 +1,46 @@
-// pages/cart/cart.js
-var request = require('../../utils/JOKE.js')
+// pages/Joke/Joke.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    inputValue: '',
-    list:[],
-    id:''
-  },
-
-  getValue: function() {
-    this.setData({
-      inputValue: wx.getStorageSync('a')
-    })
-
-  },
-
-  request: function() {
-    request.request();
-  var that = this;
-  wx.getStorage({
-    key: 'list',
-    success: function(res) {
-     that.setData({
-       list:res.data
-      }) 
-    },
-  })
+    id:'',
+    list: {
+      title:'',
+      text:''
+    }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    var that = this;
+
+    
+     wx.getStorage({
+        key: 'id',
+        success: function(res) {
+          that.setData({
+            id : res.data
+          })
+
+          wx.getStorage({
+            key: 'list',
+            success: function (res) {
+              that.setData({
+                'list.title':res.data[that.data.id].title,
+                'list.text':res.data[that.data.id].text
+              })
+              console.log(res.data[that.data.id].title)
+            },
+          })
+
+        },
+      });
+   ;
+     
 
   },
 
@@ -44,13 +50,6 @@ Page({
   onReady: function() {
 
   },
-
-  clickJoke: function(e) {
-    var pageid = e.currentTarget.id;
-    wx.setStorageSync('id', pageid)
-    
-  },
-
 
   /**
    * 生命周期函数--监听页面显示
