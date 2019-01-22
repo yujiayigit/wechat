@@ -3,7 +3,7 @@
 <navigator class="shop-list" url='../Joke/Joke'><view class='item' wx:for="{{list}}" id='{{index}}' bindtap='clickJoke'>{{index+1}}\n{{item.title}}</view></navigator>
 <button bindtap='getValue'>点击我</button>
 <button bindtap='request' type='warn'>请求</button>
-<navigator class="shop-list" url='../ok/ok'><button bindtap='getValue'>点击我</button></navigator>
+<navigator class="shop-list" url='../ok/ok'><button >购物车</button></navigator>
 
 
 

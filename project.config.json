@@ -31,7 +31,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -62,6 +62,11 @@
 					"name": "笑话List",
 					"pathName": "pages/cart/cart",
 					"query": "id=3995"
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/mine/mine"
 				}
 			]
 		}

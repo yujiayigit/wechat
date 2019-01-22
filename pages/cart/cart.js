@@ -19,6 +19,9 @@ Page({
   },
 
   request: function() {
+    wx.showLoading({
+      title: '正在加载',
+    })
     request.request();
   var that = this;
   wx.getStorage({
@@ -28,7 +31,8 @@ Page({
        list:res.data
       }) 
     },
-  })
+  });
+  wx.hideLoading();
   },
 
   /**
@@ -46,9 +50,13 @@ Page({
   },
 
   clickJoke: function(e) {
+    wx.showLoading({
+      title: '正在加载',
+    });
+    
     var pageid = e.currentTarget.id;
     wx.setStorageSync('id', pageid)
-    
+    wx.hideLoading()
   },
 
 

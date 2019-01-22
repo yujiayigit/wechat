@@ -29,12 +29,7 @@
   justify-content: center;
   position: relative;
 }
-.user-avater{
-  width: 100rpx;
-  height: 100rpx;
-  position: absolute;
-  margin: 0 auto;
-}
+
 .user-set{
   position: absolute;
   right: 0;
@@ -45,16 +40,23 @@ color: #797979;
   width: 50rpx;
   height: 50rpx;
 }
-.user-set-text{
 
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  position: absolute;
+  margin: 0 auto;
 }
+
 .user-name{
   display: flex;
   align-self: center;
   font-size: 40rpx;
 }
-.order {
-}
-
-.options {
+.but{
+ margin: 150px 100rpx 0px;
+ display: block;
+ padding: 0px;
+ width: auto;
 }
