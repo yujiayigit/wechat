@@ -1,0 +1,7 @@
+
+<button bindtap='reStar'>当前位置</button>
+<button bindtap='scMap' disabled='{{bigDisabled}}' id='1'>放大</button>
+<button bindtap='scMap' disabled='{{smallDisabled}}'id='2'>缩小</button>
+<view>
+<map class='map'   enable-zoom	='true' circles="{{circles}}" scale='{{scaleSize}}' id='map' longitude='{{longitude}}' latitude="{{latitude}}" show-location='true'></map>
+</view>

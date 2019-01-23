@@ -1,6 +1,5 @@
 {
   "pages": [
-    
     "pages/class/class",
     "pages/index/index",
     "pages/mine/mine",
@@ -9,13 +8,19 @@
     "pages/mine/order/orderList",
     "pages/goodsDetail/goodsDetail",
     "pages/Joke/Joke",
-"pages/ok/ok"
+    "pages/map/map",
+    "pages/ok/ok"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#D19E29",
     "navigationBarTitleText": "办公用品采购",
     "navigationBarTextStyle": "write"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
   },
   "tabBar": {
     "color": "#000",

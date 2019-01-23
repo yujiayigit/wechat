@@ -1,16 +1,11 @@
 <!--pages/mine.wxml-->
 <view class='mine'>
-  <view class='top'>
-    <text class='text-per-center'>{{userInfo.nickName}}</text>
+  <text class='text-per-center'>{{userInfo.nickName}}</text>
     <view class='top-center'>
       <image class='userinfo-avatar'  src='{{userInfo.avatarUrl}}'></image>
       <view class='user-set'>
       </view>
-    </view>
   </view>
-  <view class='order'>我的订单</view>
-  <view class='options'>优惠券</view>
-      
 </view>
 <view>
    <button class='but' open-type="getUserInfo" bindgetuserinfo="getUserInfo"  > 获取头像昵称 </button>
