@@ -2,6 +2,7 @@ Page({
   data: {
     showModalStatus: false,
     animationData: '',//.export导出的动画
+    list:'',
   },
   onLoad: function() {
 
@@ -69,5 +70,21 @@ console.log('震动')
         height: rect.width + 'px'
       })*/
     }).exec();
+  },
+
+  test:function(){
+    var that = this;
+wx.request({
+  url: 'http://localhost:8081/demo/ShowStu',
+  data: {
+    
+  },
+  success:function(e){
+    that.setData({
+      list:e.data
+    })
+    console.log(e.data);
+  }
+})
   }
 })

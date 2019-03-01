@@ -31,7 +31,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -72,7 +72,14 @@
 				{
 					"id": -1,
 					"name": "map",
-					"pathName": "pages/map/map"
+					"pathName": "pages/map/map",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "商品详情",
+					"pathName": "pages/ok/ok",
+					"query": "id=3995"
 				}
 			]
 		}

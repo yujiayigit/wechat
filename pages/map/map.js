@@ -8,7 +8,7 @@ Page({
     latitude: '',
     longitude: '',
     scaleIndex: 9,
-    scaleSize: 9,
+    scaleSize: 16,
     bigDisabled: false,
     smallDisabled: false,
     circles: []
@@ -36,7 +36,7 @@ Page({
             longitude: res.longitude,
             color: '#FF0000DD',
             fillColor: '#7cb5ec88',
-            radius: 3000,
+            radius: 100,
             strokeWidth: 1
           }]
         });
@@ -48,6 +48,11 @@ Page({
   scMap: function(e) {
     var that = this;
     var id = e.target.id;
+    this.mapContext = wx.createMapContext('map');
+    this.mapContext.getScale({
+      success:function(res){
+      }
+    })
 
     if (id == 1 && this.data.scaleSize < 18) {
       that.setData({
@@ -74,5 +79,17 @@ Page({
         })
       }
     }
+  },
+  choose:function(){
+    var that = this;
+    wx.chooseLocation({
+      success: function (res) {
+        console.log(res);
+        that.setData({
+          latitude: res.latitude,
+          longitude: res.longitude
+        })
+      },
+    })
   }
 })

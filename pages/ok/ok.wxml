@@ -3,6 +3,9 @@
 <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
 <text>弹出层的内容</text>
 </view>
+<view wx:for="{{list}}" >
+姓名：{{item.studentNo}}{{item.name}}{{item.age}}{{item.sex}}
+</view>
 <view class="shopCar" >
 	<view class="carParent">
 	</view>
@@ -14,7 +17,7 @@
 		<view class="sumPrice">
 			<text>￥{{sumPrice}}</text>		
 		</view>
-		<view class="addPay">去结算</view>
+		<view class="addPay" bindtap='test'>去结算</view>
 	</view>
 			   		
 </view>
